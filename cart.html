@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cart - Blossom Boutique</title>
+  <link rel="stylesheet" href="css/cart.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome for Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body style="background-image: url(images/shop-bg.jpg);">
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-navbar shadow-sm">
+  <div class="container">
+
+    <!-- Logo + Title -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <span style="color: #7c4f7c;">𝒫𝐸𝒯𝒜𝐿𝒰𝑅𝐸</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+      <!-- Search bar -->
+      <form class="position-relative d-inline-block me-3" style="width: 250px;">
+        <input class="form-control search-input pe-5" type="search" placeholder="Search flowers..." aria-label="Search">
+        <button class="search-icon-btn" type="submit" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Nav links -->
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link" href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link active" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+  <div class="container my-5">
+    <h2 class="section-heading">Shopping Cart</h2>
+    <div id="cartContainer" class="row"></div>
+
+    <div class="cart-summary card p-4 mt-4">
+      <h4>Cart Summary</h4>
+      <p>Subtotal: ₹<span id="subtotal">0</span></p>
+      <p>Delivery Charge: ₹<span id="deliveryCharge">50</span></p>
+      <p><strong>Total: ₹<span id="totalAmount">0</span></strong></p>
+      <p>Expected Delivery: <span id="expectedDate"></span></p>
+      <button class="btn btn-success mt-3">Buy Now</button>
+    </div>
+  </div>
+  <br><br><br><br>
+  <!-- Footer -->
+<footer class="bg-light text-center text-muted py-3">
+  <div class="container">
+    <small>© 2025 Flower Store. All rights reserved.</small>
+  </div>
+</footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

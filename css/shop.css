@@ -1,0 +1,169 @@
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+  background-color: #fff;
+}
+
+.nav-vl {
+  width: 1px;
+  height: 24px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+
+.nav-link i {
+  margin-right: 6px;
+}
+
+.nav-link.active{
+  color: #761471;
+  font-weight: bold;
+  border-bottom: 2px solid #c16596;
+}
+
+.nav-link:hover {
+  color: #b03060; 
+  transition: color 0.3s ease;
+}
+
+.search-input {
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+.search-icon-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #b03060;
+}
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #7c4f7c; 
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color:  #7c4f7c;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-subheading {
+  font-size: 1.1rem;
+  color: #3a3939;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+body {
+  background-image: url('images/shop-bg.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+html, body {
+  height: 100%;
+}
+
+.shop-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.mb-4 {
+  color: #b03060;
+}
+.card {
+  border: none;
+  border-radius: 45px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #e6ded2c5;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.product-img:hover{
+  transform: scale(1.05);
+}
+.card-title {
+  padding-left: 30px;
+  font-size:larger;
+  font-weight:xx-large;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  padding-left: 30px;
+  color: #db1b1b;
+  font-size:large;
+  margin-bottom: 1rem;
+}
+
+.simple-icon {
+  padding-right: 30px;
+  font-size: 1.2rem;
+  color: #c20202;
+  transition: color 0.3s;
+}
+.simple-icon.fas{
+  color: #819609
+}
+
+.simple-icon.fas:hover {
+  color: #f79707 !important;
+}
+
+.text-danger {
+  color: red !important;
+}
+
+
+
+

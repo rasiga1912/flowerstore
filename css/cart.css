@@ -1,0 +1,94 @@
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+  background-color: #fff;
+}
+
+.nav-vl {
+  width: 1px;
+  height: 24px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+
+.nav-link i {
+  margin-right: 6px;
+}
+
+.nav-link.active{
+  color: #761471;
+  font-weight: bold;
+  border-bottom: 2px solid #c16596;
+}
+
+.nav-link:hover {
+  color: #b03060; 
+  transition: color 0.3s ease;
+}
+
+
+.search-input {
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+.search-icon-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #b03060;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #7c4f7c; 
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color:  #7c4f7c;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-subheading {
+  font-size: 1.1rem;
+  color: #3a3939;
+  margin-bottom: 2rem;
+}
+
+body{
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.cart-summary {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.cart-summary h4 {
+  margin-bottom: 20px;
+}
