@@ -26,5 +26,5 @@ Check out the live site here:
 - GitHub Pages for hosting
 
 
-   git clone https://github.com/yourusername/flowerstore.git
+   git clone https://github.com/rasiga1912/flowerstore.git
 
