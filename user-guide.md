@@ -90,7 +90,7 @@ A: Yes, items are saved locally in your browser.
 ## 📬 Support
 For help or questions:  
 📧 Email: support@blossomboutique.com  
-🌐 Website: [Blossom Boutique](https://github.com/rasiga1912/flowerstore)  
+🌐 Website: [Blossom Boutique](https://rasiga1912.github.io/flowerstore)  
 
 ---
 
