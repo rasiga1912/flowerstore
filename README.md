@@ -28,3 +28,6 @@ Check out the live site here:
 
    git clone https://github.com/rasiga1912/flowerstore.git
 
+## Documentation
+📖 [User Guide](docs/user-guide.md)
+
