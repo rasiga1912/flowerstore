@@ -11,8 +11,7 @@ This guide will help you navigate the website, browse products, manage your cart
 3. [Homepage Features](#homepage-features)  
 4. [Shopping for Flowers](#shopping-for-flowers)  
 5. [Wishlist](#wishlist)  
-6. [Cart & Checkout](#cart--checkout)  
-7. [Admin Panel](#admin-panel)  
+6. [Cart & Checkout](#cart--checkout)   
 8. [FAQs](#faqs)  
 9. [Support](#support)
 
