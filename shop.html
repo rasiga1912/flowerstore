@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Flower Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Custom Shop Styles -->
+  <link rel="stylesheet" href="css/shop.css" />
+<script src="js/shop.js" defer></script>
+
+  
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-navbar shadow-sm">
+  <div class="container">
+
+    <!-- Logo + Title -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <span style="color: #7c4f7c;">𝒫𝐸𝒯𝒜𝐿𝒰𝑅𝐸</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+      <!-- Search bar -->
+      <form class="position-relative d-inline-block me-3" style="width: 250px;">
+        <input class="form-control search-input pe-5" type="search" placeholder="Search flowers..." aria-label="Search">
+        <button class="search-icon-btn" type="submit" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Nav links -->
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link active" href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        <div class="nav-vl"></div>
+
+        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<br>
+<br>
+<!-- Shop Section -->
+<section class="py-5">
+  <div class="container">
+  <h2 class="section-heading">𝑶𝒖𝒓 𝑭𝒍𝒐𝒓𝒂𝒍 𝑩𝒐𝒖𝒒𝒖𝒆𝒕𝒔</h2>
+  <p class="section-subheading">Find the perfect flowers for every occasion</p>
+    
+    <!-- Row 1 -->
+     
+    <div class="row g-4 mb-4">
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Peony.jpg" class="card-img-top product-img" alt="Peony" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Peony</h5>
+            <a href="#" onclick="addToWishlist(this, 'Peony', 'images/Peony.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Peony', 'images/Peony.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Anemone.jpg" class="card-img-top product-img" alt="Anemone" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Anemone</h5>
+            <a href="#" onclick="addToWishlist(this, 'Anemone', 'images/Anemone.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Anemone', 'images/Anemone.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Pink-Ranunculus.jpg" class="card-img-top product-img" alt="Pink Ranunculus" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Pink Ranunculus</h5>
+            <a href="#" onclick="addToWishlist(this, 'Pink Ranunculus', 'images/Pink-Ranunculus.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Pink Ranunculus', 'images/Pink-Ranunculus.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+</div>
+
+    <!-- Row 2 -->
+<div class="row g-4 mb-4">
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Tulips.jpg" class="card-img-top product-img" alt="Tulips" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Tulips</h5>
+            <a href="#" onclick="addToWishlist(this, 'Tulips', 'images/Tulips.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+           <a href="#" onclick="addToCart(this, 'Orange Tulips', 'images/orange-tulips.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/white-lily.jpg" class="card-img-top product-img" alt="White Lily" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">White Lily</h5>
+            <a href="#" onclick="addToWishlist(this, 'Jasmine', 'images/white-lily.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'White Lily', 'images/white-lily.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/purple-orchid.jpg" class="card-img-top product-img" alt="Purple Orchid" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Purple Orchid</h5>
+           <a href="#" onclick="addToWishlist(this, 'Purple Orchid', 'images/purple-orchid.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Purple Orchid', 'images/purple-orchid.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+</div>
+
+
+<!-- Row 3 -->
+<div class="row g-4 mb-4">
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/White-Daisy.jpg" class="card-img-top product-img" alt="White Daisy" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">White Daisy</h5>
+            <a href="#" onclick="addToWishlist(this, 'White Daisy', 'images/White-Daisy.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'White Daisy', 'images/White-Daisy.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Pink-Carnation.jpg" class="card-img-top product-img" alt="Pink Carnation" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Pink Carnation</h5>
+            <a href="#" onclick="addToWishlist(this, 'Pink Carnation', 'images/Pink-Carnation.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+           <a href="#" onclick="addToCart(this, 'Pink Carnation', 'images/Pink-Carnation.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Hydrangea.jpg" class="card-img-top product-img" alt="Hydrangea" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Hydrangea</h5>
+            <a href="#" onclick="addToWishlist(this, 'Hydrangea', 'images/Hydrangea.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Hydrangea', 'images/Hydrangea.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+</div>
+
+
+<!-- Row 4 -->
+<div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/light-pink-rose.jpg" class="card-img-top product-img" alt="Rose Bouquet" />
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Rose Bliss</h5>
+           <a href="#" onclick="addToWishlist(this, 'Rose Bliss', 'images/light-pink-rose.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Rose Bliss', 'images/light-pink-rose.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+        </div>
+      </div>
+
+      <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/yellow-rose.jpg" class="card-img-top product-img" alt="Yellow Rose Mix" />
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Yellow Rose</h5>
+            <a href="#" onclick="addToWishlist(this, 'Yellow Rose', 'images/yellow-rose.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Yellow Rose', 'images/yellow-rose.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/red-rose.jpg" class="card-img-top product-img" alt="Red Rose Mix" />
+          <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Red Rose</h5>
+            <a href="#" onclick="addToWishlist(this, 'Red Rose', 'images/red-rose.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Red Rose', 'images/red-rose.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+        </div>
+      </div>
+    </div>
+
+
+<!-- Row 5 -->
+<div class="row g-4 mb-4">
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Gardenia.jpg" class="card-img-top product-img" alt="Gardenia" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Gardenia</h5>
+            <a href="#" onclick="addToWishlist(this, 'Gardenia', 'images/Gardenia.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Gardenia', 'images/Gardenia.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Zinnia.jpg" class="card-img-top product-img" alt="Zinnia" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Rose Bliss</h5>
+            <a href="#" onclick="addToWishlist(this, 'Zinnia', 'images/Zinnia.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Zinnia', 'images/Zinnia.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <img src="images/Jasmine.jpg" class="card-img-top product-img" alt="Jasmine" />
+      <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Jasmine</h5>
+            <a href="#" onclick="addToWishlist(this, 'Zinnia', 'images/Jasmine.jpg', 799)">
+            <i class="far fa-heart simple-icon"></i>
+          </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Jasmine', 'images/Jasmine.jpg', 799)">
+          <i class="fas fa-shopping-cart simple-icon"></i>
+          </a>
+          </div>
+        </div> 
+    </div>
+  </div>
+</div>
+
+    <!-- Add more rows similarly -->
+  </div>
+</section>
+
+<!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/heartcartfunc.js"></script>
+
+
+</body>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-muted py-3">
+  <div class="container">
+    <small>© 2025 Flower Store. All rights reserved.</small>
+  </div>
+</footer>
+</html>
+
+   
