@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -469,4 +470,477 @@
 <script src="js/heartcartfunc.js"></script> 
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Flower Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Custom Shop Styles -->
+  <link rel="stylesheet" href="css/theme.css" />
+  
+</head>
+
+<!---------BODY----------->
+
+<body> 
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-navbar shadow-sm">
+<div class="container">
+
+    <!-- Logo + Title -->
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+      <span style="color: #7c4f7c;">𝒫𝐸𝒯𝒜𝐿𝒰𝑅𝐸</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+    <!-- Search bar -->
+    <form class="position-relative d-inline-block me-3" style="width: 250px;">
+      <input class="form-control search-input pe-5" type="search" placeholder="Search flowers..." aria-label="Search">
+      <button class="search-icon-btn" type="submit" aria-label="Search">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+
+    <!-- Nav links -->
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <div class="nav-vl"></div>
+
+      <li class="nav-item"><a class="nav-link" href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+        <div class="nav-vl"></div>
+
+      <li class="nav-item"><a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+        <div class="nav-vl"></div>
+
+      <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        <div class="nav-vl"></div>
+
+      <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+    
+    </ul>
+  </div>
+
+</div>
+</nav>
+<br>
+
+
+<!-----HERO BANNER------>
+
+<section class="hero-banner text-white text-center">
+<div>
+ <h2 class="section-heading">𝑪𝒆𝒍𝒆𝒃𝒓𝒂𝒕𝒆 𝒊𝒏 𝑺𝒕𝒚𝒍𝒆</h2>
+ <p class="section-subheading">Birthday blooms that make every moment magical</p>
+
+  <div class="row mt-5 justify-content-center">
+
+    <div class="col-md-3">
+    <a href="#white-bouquets" class="category-card">
+    <img src="images/birthday-box.jpg" class="img-fluid" alt="Birthday Box Bouquets">
+    <div class="category-caption">Birthday Box Bouquets</div>
+    </a>
+    </div>
+
+    <div class="col-md-3">
+    <a href="#red-bouquets" class="category-card">
+    <img src="images/cakes.jpg" class="img-fluid" alt="Personalized Cake Flavor">
+    <div class="category-caption">Your Flavor, Your Cake</div>
+    </a>
+    </div>
+
+    <div class="col-md-3">
+    <a href="#mixed-bouquets" class="category-card">
+    <img src="images/choco-box.jpg" class="img-fluid" alt="Chocolate Boxes">
+    <div class="category-caption">Chocolate Boxes</div>
+    </a>
+    </div>
+
+    <div class="col-md-3">
+    <a href="#mixed-bouquets" class="category-card">
+    <img src="images/scented-candles.jpg" class="img-fluid" alt="Scented Candles">
+    <div class="category-caption">personalized Scented Candles</div>
+    </a>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!--Cake Section -->
+<section id="white-bouquets" class="container my-5;">
+<br>
+    <h2 class="section-heading">YOUR YUMMY FLAVOR PICK</h2>
+  <!---row1------>
+  <div class="row mt-5 justify-content-center">
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/dark-choco.jpg" class="card-img-top" alt="Dark Chocolate">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Dark Chocolate</h5>
+            <a href="#" onclick="addToWishlist(this, 'Dark Chocolate', 'images/dark-choco.jpg', 799); return false;">
+            <i class="far fa-heart simple-icon"></i>
+            </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Dark Chocolate', 'images/dark-choco.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i> 
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/blueberry.jpg" class="card-img-top" alt="Blueberry">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Blueberry</h5>
+             <a href="#" onclick="addToWishlist(this, 'Blueberry', 'images/blueberry.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Blueberry', 'images/blueberryjpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/Caramel-Dreams.jpg" class="card-img-top" alt="Caramel Dreams">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Caramel Dreams</h5>
+             <a href="#" onclick="addToWishlist(this, 'Caramel Dreams', 'images/Caramel-Dreams.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Caramel Dreams', 'images/Caramel-Dreams.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/red-velvet.jpg" class="card-img-top" alt="Red Velevet">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Red Velvet</h5>
+             <a href="#" onclick="addToWishlist(this, 'Red Velvet', 'images/red-velvet.jpg', 799); return false;">
+  <i class="far fa-heart simple-icon"></i>
+</a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+           <a href="#" onclick="addToCart(this, 'Red Velvet', 'images/red-velvet.jpg', 799)">
+  <i class="fas fa-shopping-cart simple-icon"></i>
+</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <!---row2------>
+
+    <div class="row mt-5 justify-content-center">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/lemon-cake.jpg" class="card-img-top" alt="Lemon Cake">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Lemon Cake</h5>
+             <a href="#" onclick="addToWishlist(this, 'Lemon Cake', 'images/lemon-cake.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+            </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Lemon Cake', 'images/lemon-cake.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/greenery-peonies-cake.jpg" class="card-img-top" alt="Greenery peonies Cake">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Greenery peonies Cake</h5>
+             <a href="#" onclick="addToWishlist(this, 'Greenery peonies Cake', 'images/greenery-peonies-cake.jpg', 799); return false;">
+            <i class="far fa-heart simple-icon"></i>
+            </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Greenery peonies Cake', 'images/greenery-peonies-cake.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/pastel-pink-cake.jpg" class="card-img-top" alt="Pastel Pink Cake">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Pastel Pink Cake</h5>
+             <a href="#" onclick="addToWishlist(this, 'Pastel Pink Cake', 'images/pastel-pink-cake.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Pastel Pink Cake', 'images/pastel-pink-cake.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/sunflower-yellow-cake.jpg" class="card-img-top" alt="Sunflower Yellow Cake">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Sunflower Yellow Cake</h5>
+             <a href="#" onclick="addToWishlist(this, 'Sunflower Yellow Cake', 'images/sunflower-yellow-cake.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹799</p>
+            <a href="#" onclick="addToCart(this, 'Sunflower Yellow Cake', 'images/sunflower-yellow-cake.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- Add more bouquet cards -->  
+  </div>
+</section>
+
+<!-- Gift Section -->
+<section id="mixed-bouquets" class="container my-5">
+  <h2 class="section-heading">Gifts That Wow</h2>
+ <!---row1------>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/fairy-mug.jpg" class="card-img-top" alt="fairy-mug">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Fairy Mug</h5>
+             <a href="#" onclick="addToWishlist(this, 'Fairy Mug', 'images/fairy-mug.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹300</p>
+            <a href="#" onclick="addToCart(this, 'Fairy Mug', 'images/fairy-mug.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/flower-vase.jpg" class="card-img-top" alt="Flower Vase">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Flower Vase</h5>
+             <a href="#" onclick="addToWishlist(this, 'Tulip elegant', 'images/flower-vase.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹499</p>
+            <a href="#" onclick="addToCart(this, 'Flower Vase', 'images/flower-vase.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/scentedcandle.jpg" class="card-img-top" alt="Scented Candle">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Scented Candle</h5>
+             <a href="#" onclick="addToWishlist(this, 'Scented Candle', 'images/scentedcandle.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹300</p>
+            <a href="#" onclick="addToCart(this, 'Scented Candle', 'images/scentedcandle.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/perfumes.jpg" class="card-img-top" alt="Perfume">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Perfume</h5>
+             <a href="#" onclick="addToWishlist(this, 'Perfume', 'images/perfumes.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹800</p>
+            <a href="#" onclick="addToCart(this, 'Perfume', 'images/perfumes.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+    
+    <div class="row mt-5 justify-content-center"></div>
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/flower-pillow.jpg" class="card-img-top" alt="Flower Pillow">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Flower Pillow</h5>
+             <a href="#" onclick="addToWishlist(this, 'Flower Pillow', 'images/flower-pillow.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹350</p>
+            <a href="#" onclick="addToCart(this, 'Flower Pillow', 'images/flower-pillow.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/aesthetic-mirror.jpg" class="card-img-top" alt="Aesthetic Mirror">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Aesthetic Mirror</h5>
+             <a href="#" onclick="addToWishlist(this, 'Aesthetic Mirror', 'images/aesthetic-mirror.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹250</p>
+            <a href="#" onclick="addToCart(this, 'Aesthetic Mirror', 'images/aesthetic-mirror.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/candle-holder.jpg" class="card-img-top" alt="Candle Holder">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Candle Holder</h5>
+             <a href="#" onclick="addToWishlist(this, 'Candle Holder', 'images/candle-holder.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹200</p>
+            <a href="#" onclick="addToCart(this, 'Candle Holder', 'images/candle-holder.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="images/blooming-lamp.jpg" class="card-img-top" alt="Blooming Lamp">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title mb-1">Blooming Lamp</h5>
+             <a href="#" onclick="addToWishlist(this, 'Perfume', 'images/blooming-lamp.jpg', 799); return false;">
+             <i class="far fa-heart simple-icon"></i>
+             </a>
+          </div>
+          <div class="d-flex justify-content-between mt-1">
+            <p class="card-text mb-0">₹699</p>
+            <a href="#" onclick="addToCart(this, 'Blooming Lamp', 'images/blooming-lamp.jpg', 799)">
+            <i class="fas fa-shopping-cart simple-icon"></i>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!---ADD MORE ITEMS-->
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-muted py-3">
+  <div class="container">
+    <small>© 2025 Flower Store. All rights reserved.</small>
+  </div>
+</footer>
+
+<!----SCRIPTS---->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script> 
+<script src="js/heartcartfunc.js"></script> 
+
+</body>
+
 </html>

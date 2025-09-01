@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rasiga1912.github.io/flowerstore/sitemap.xml
