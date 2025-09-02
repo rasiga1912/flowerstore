@@ -188,3 +188,11 @@ body{
   color: #000;
   font-size: 1.2rem;
 }
+
+/* Responsive Navbar Search Input */
+@media (max-width: 576px) {
+  .navbar .form-control {
+    width: 100%; /* full width on mobile */
+  }
+}
+
