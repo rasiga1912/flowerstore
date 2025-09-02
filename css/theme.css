@@ -47,7 +47,7 @@
 }
 
 .section-heading {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -67,7 +67,7 @@
 }
 
 .section-subheading {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #3a3939;
   margin-bottom: 2rem;
   text-align: center;
@@ -104,6 +104,7 @@ body{
 }
 
 .hero-banner {
+  padding: 100px 15px;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -190,9 +191,18 @@ body{
 }
 
 /* Responsive Navbar Search Input */
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem; /* smaller screens */
+  }
+  .section-subheading {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 576px) {
   .navbar .form-control {
     width: 100%; /* full width on mobile */
   }
 }
-
