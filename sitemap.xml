@@ -4,45 +4,55 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<!-- Optimized sitemap for FlowerStore -->
 
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
+  <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
+
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/shop.html</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/wishlist.html</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
 </url>
+
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/cart.html</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
 </url>
+
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/login.html</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
-  <priority>0.80</priority>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
 </url>
+
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/wedding.html</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
+
 <url>
   <loc>https://rasiga1912.github.io/flowerstore/birthday.html</loc>
   <lastmod>2025-09-02T18:30:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
-
-
 
 </urlset>
