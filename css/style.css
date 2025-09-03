@@ -88,13 +88,14 @@ main {
   font-family: 'Playfair Display', serif;
 }
 
-.hero-slide .btn-custom {
-    display: inline-block;   /* prevents full width */
-    width: auto;             /* ensure it doesn’t stretch */
-    min-width: 150px;        /* optional, consistent size */
-    padding: 10px 25px;
+.hero-slide .btn {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 150px;
+    padding: 10px 25px !important;
     text-align: center;
 }
+
 
 body {
   
