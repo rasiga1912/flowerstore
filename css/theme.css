@@ -84,14 +84,22 @@ section {
   text-align: center;
 }
 
-body{
+body.wedding-page {
+  background-image: url('wedding-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.birthday-page {
   background-image: url('birthday-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
 }
+
 
 .section-heading {
   font-size: 2.5rem;
@@ -119,10 +127,12 @@ body{
   padding-bottom: 50px;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: auto;         
+  min-height: 50vh;     
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; 
 }
 
 .hero-banner h1 {
@@ -227,22 +237,49 @@ body{
 }
 
 @media (max-width: 576px) {
+  /* Navbar search input */
   .navbar .form-control {
     width: 100%; /* full width on mobile */
   }
-}
 
-@media (max-width: 576px) {
+  /* Body padding for navbar */
   body {
-    padding-top: 100px; /* a bit more for small screens */
+    padding-top: 100px;
   }
   
+  /* Hero heading and paragraph */
   .hero-banner h1 {
     font-size: 1.8rem;
   }
-  
   .hero-banner p {
     font-size: 1rem;
   }
+
+  /* Hero banner height */
+  .hero-banner {
+    height: auto;       /* allow auto height */
+    min-height: 50vh;   /* still take enough space */
+    padding-top: 80px;
+    padding-bottom: 30px;
+    flex-direction: column;
+  }
+
+  /* Category cards stack vertically */
+  .hero-banner .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Category card images scale */
+  .category-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Card images in bouquets */
+  .card-img-top {
+    height: auto;
+  }
 }
+
 
