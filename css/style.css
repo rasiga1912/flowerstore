@@ -88,6 +88,13 @@ main {
   font-family: 'Playfair Display', serif;
 }
 
+.hero-slide .btn-custom {
+    display: inline-block;   /* prevents full width */
+    width: auto;             /* ensure it doesn’t stretch */
+    min-width: 150px;        /* optional, consistent size */
+    padding: 10px 25px;
+    text-align: center;
+}
 
 body {
   
@@ -186,7 +193,11 @@ blockquote {
   font-size: 1.1rem;
   color: #555;
 }
-
+.testimonial-section .carousel-control-prev,
+.testimonial-section .carousel-control-next {
+    top: 50%;                     /* vertical center */
+    transform: translateY(-50%);
+}
 .icon-bar a {
   font-size: 1.2rem;
   color: #b91919;
