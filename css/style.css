@@ -78,6 +78,13 @@ main {
     text-align: center;
 }
 
+.hero-slide .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .hero-slide h1 {
   font-family: 'Playfair Display', serif;
 }
@@ -235,9 +242,14 @@ blockquote {
 }
 
 .carousel-item {
+  height: 100vh;           /* full viewport height */
+  min-height: 500px;
   transition: opacity 1s ease-in-out;
 }
 
+.carousel-item .hero-slide {
+  height: 100%;
+}
 
 .btn-custom {
   background-color: #b03060;
