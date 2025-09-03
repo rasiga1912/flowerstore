@@ -180,18 +180,12 @@ body.birthday-page {
   padding: 10px 20px;
   border-radius: 10px;
   pointer-events: none;
-  transition: none; /* no fade needed */
 }
 
 .category-card:hover img {
   transform: scale(1.1);
   filter: brightness(100%);
 }
-
-.category-card:hover .category-caption {
-  opacity: 1;
-}
-
 
 .img-fluid{
     height: 450px;
