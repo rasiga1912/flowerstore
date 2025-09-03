@@ -57,6 +57,7 @@ section {
 }
 
 .section-heading {
+  margin-top: 20px;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -122,7 +123,7 @@ body.birthday-page {
 }
 
 .hero-banner {
-  padding-top: 70px; 
+  padding-top: 0px;  /* desktop default */
   padding-bottom: 50px;
   background-size: cover;
   background-position: center;
@@ -226,10 +227,19 @@ body.birthday-page {
 
 @media (max-width: 768px) {
   .section-heading {
+    margin-top: 20px;
     font-size: 1.5rem; /* smaller screens */
   }
   .section-subheading {
     font-size: 1rem;
+  }
+  .hero-banner{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero-banner img {
+    width: 100%;
+    padding: 0; /* remove image padding */
   }
 }
 
@@ -241,7 +251,7 @@ body.birthday-page {
 
   /* Body padding for navbar */
   body {
-    padding-top: 100px;
+    padding-top: 60px;
   }
   
   /* Hero heading and paragraph */
@@ -256,7 +266,7 @@ body.birthday-page {
   .hero-banner {
     height: auto;       /* allow auto height */
     min-height: 50vh;   /* still take enough space */
-    padding-top: 80px;
+    padding-top: 5px;
     padding-bottom: 30px;
     flex-direction: column;
   }
