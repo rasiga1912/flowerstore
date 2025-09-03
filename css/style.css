@@ -300,6 +300,7 @@ blockquote {
 
 
 @media (max-width: 768px) {
+
   /* Navbar adjustments */
   .search-input {
     width: 100% !important; 
@@ -310,25 +311,40 @@ blockquote {
   }
 
   /* Hero section */
-  .hero,
-  .hero-slide {
-    height: 50vh; 
-    padding: 0 10px; 
+  .hero, .hero-slide {
+    height: auto;           /* let content determine height */
+    min-height: 50vh;       /* optional minimum */
+    padding: 40px 10px;     /* vertical and horizontal padding */
+  }
+
+  .hero-slide .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .hero-slide h1 {
-    font-size: 1.8rem; 
+    font-size: 1.5rem;      /* smaller headings */
+    line-height: 1.2;       /* avoid text overlap */
   }
+
   .hero-slide p.lead {
-    font-size: 1rem; 
+    font-size: 1rem;        /* adjust paragraph */
   }
 
   /* Product cards / images */
-  .card-img-top,
-  .product-img {
+  .card-img-top, .product-img {
     height: auto;      
-    max-height: 300px; 
+    max-height: 250px;      /* scale down images on mobile */
+    object-fit: cover;
   }
+
+  /* Body background fix for mobile */
+  body::before {
+    background-attachment: scroll;
+  }
+
+}
+
 
   /* Body background fix for mobile */
   body::before {
