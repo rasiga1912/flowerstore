@@ -1,7 +1,7 @@
 
 /* Vertical line between nav items */
 body {
-  padding-top: 20px; /* match your navbar height */
+  padding-top: 80px; /* match your navbar height */
 }
 
 /* Extra spacing between sections */
@@ -122,6 +122,7 @@ body.birthday-page {
 }
 
 .hero-banner {
+  margin-top: 80px;
   padding-top: 100px; 
   padding-bottom: 50px;
   background-size: cover;
