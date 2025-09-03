@@ -1,4 +1,14 @@
 
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-display: swap;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -333,18 +343,18 @@ blockquote {
   }
 
   .hero-slide h1 {
-    font-size: 1.5rem;      /* smaller headings */
-    line-height: 1.2;       /* avoid text overlap */
+    font-size: 1.5rem;      
+    line-height: 1.2;     
   }
 
   .hero-slide p.lead {
-    font-size: 1rem;        /* adjust paragraph */
+    font-size: 1rem;        
   }
 
   /* Product cards / images */
   .card-img-top, .product-img {
     height: auto;      
-    max-height: 400px;      /* scale down images on mobile */
+    max-height: 400px;     
     object-fit: cover;
   }
 
