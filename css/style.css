@@ -297,14 +297,41 @@ blockquote {
 
 
 /* Responsive tweaks */
+
+
 @media (max-width: 768px) {
-  .hero {
-    height: 60vh;
+  /* Navbar adjustments */
+  .search-input {
+    width: 100% !important; 
+    margin-bottom: 10px;    
   }
+  .nav-vl {
+    display: none; 
+  }
+
+  /* Hero section */
+  .hero,
+  .hero-slide {
+    height: 50vh; 
+    padding: 0 10px; 
+  }
+
+  .hero-slide h1 {
+    font-size: 1.8rem; 
+  }
+  .hero-slide p.lead {
+    font-size: 1rem; 
+  }
+
+  /* Product cards / images */
+  .card-img-top,
   .product-img {
-    height: 300px;
+    height: auto;      
+    max-height: 300px; 
   }
-  .card-img-top {
-    height: 300px;
+
+  /* Body background fix for mobile */
+  body::before {
+    background-attachment: scroll;
   }
 }
