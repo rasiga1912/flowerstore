@@ -10,16 +10,19 @@
   <meta property="og:image" content="images/banner1.jpg">
   <meta property="og:url" content="https://rasiga1912.github.io/flowerstore/">
   <meta property="og:type" content="website">
-
   <link rel="canonical" href="https://rasiga1912.github.io/flowerstore/">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Bootstrap CSS (in <head>) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="i3Zhtusx7OZBNEx8zTcmsqocOCdajQlwwSDsm67lMrc" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- Font Awesome (deferred) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+  <!-- Bootstrap CSS (preload) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" >
 </head>
 
 <body>
@@ -37,7 +40,7 @@
     </a>
 
     <!-- Mobile Toggle -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -212,7 +215,7 @@
             <img src="images/Rose-Mix.jpg" class="card-img-top product-img" alt="Mixed Rose Bouquet - Fresh Flowers from Petalure Boutique" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title">Rose Mix</h5>
+              <h3 class="card-title">Rose Mix</h3>
               <p class="card-text">₹799</p>
               <a href="#" class="btn btn-primary add-to-cart" 
               data-name="Rose Mix" 
@@ -229,7 +232,7 @@
             <img src="images/blooming-lamp.jpg" class="card-img-top product-img" alt="Blooming Lamp with Decorative Flowers - Petalure Boutique" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title">Blooming Lamp</h5>
+              <h3 class="card-title">Blooming Lamp</h3>
               <p class="card-text">₹500</p>
                <a href="#" class="btn btn-primary add-to-cart" 
               data-name="Blooming Lamp" 
@@ -246,7 +249,7 @@
             <img src="images/aesthetic-mirror.jpg" class="card-img-top product-img" alt="Aesthetic Mirror with Floral Design - Petalure Boutique" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title">Aesthetic Mirror</h5>
+              <h3 class="card-title">Aesthetic Mirror</h3>
               <p class="card-text">₹599</p>
                <a href="#" class="btn btn-primary add-to-cart" 
               data-name="Aesthetic Mirror" 
@@ -268,7 +271,7 @@
             <img src="images/flower-vase.jpg" class="card-img-top product-img" alt="Elegant Flower Vase with Fresh Bouquets - Petalure Boutique" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title">Flower Vase</h5>
+              <h3 class="card-title">Flower Vase</h3>
               <p class="card-text">₹799</p>
               <a href="#" class="btn btn-primary add-to-cart" 
               data-name="Flower Vase" 
@@ -285,7 +288,7 @@
             <img src="images/blueberry.jpg" class="card-img-top product-img" alt="Blueberry Cake with Floral Decoration - Petalure Boutique" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title">Blueberry Cake</h5>
+              <h3 class="card-title">Blueberry Cake</h3>
               <p class="card-text">₹799</p>
                <a href="#" class="btn btn-primary add-to-cart" 
               data-name="Blueberry Cake" 
@@ -302,7 +305,7 @@
             <img src="images/white-tulips.jpg" class="card-img-top product-img" alt="White Tulips Bouquet - Fresh Flowers from Petalure Boutique" loading="lazy">
 
             <div class="card-body">
-              <h5 class="card-title">White Tulips Bouquet</h5>
+              <h3 class="card-title">White Tulips Bouquet</h3>
               <p class="card-text">₹799</p>
                <a href="#" class="btn btn-primary add-to-cart" 
               data-name="White Tulips Bouquet" 
@@ -396,7 +399,7 @@
 
       <!-- Column 1 -->
       <div class="col-md-3 mb-4">
-        <h5 class="footer-title">Petalure Boutique</h5>
+        <h4 class="footer-title">Petalure Boutique</h4>
         <ul class="list-unstyled">
           <li><a href="#">About Us</a></li>
           <li><a href="#">Customer Reviews</a></li>
@@ -408,7 +411,7 @@
 
       <!-- Column 2 -->
       <div class="col-md-3 mb-4">
-        <h5 class="footer-title">Customer Service</h5>
+        <h4 class="footer-title">Customer Service</h4>
         <ul class="list-unstyled">
           <li><a href="#">Delivery Info</a></li>
           <li><a href="#">How to Order</a></li>
@@ -419,7 +422,7 @@
 
       <!-- Column 3 -->
       <div class="col-md-3 mb-4">
-        <h5 class="footer-title">How Can We Help</h5>
+        <h4 class="footer-title">How Can We Help</h4>
         <ul class="list-unstyled">
           <li><a href="#">Track Your Order</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -431,11 +434,11 @@
 
       <!-- Column 4 -->
       <div class="col-md-3 mb-4">
-        <h5 class="footer-title">Follow Us</h5>
+        <h4 class="footer-title">Follow Us</h4>
         <div class="social-icons d-flex gap-3 mt-2">
-          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
         </div>
       </div>
 
@@ -471,11 +474,12 @@
   });
 </script>
 
-<!---link-->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <script src="js/index.js"></script>
-  <script src="js/cart.js"></script>
+<!---Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--Custom JS-->
+  <script src="js/index.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  
 </div>
 </body>
 </html>
